@@ -7,6 +7,10 @@ var time_line=document.getElementById("time-line");
 var story_mode=document.getElementById("story-mode");
 var about=document.getElementById("about");
 var menu=document.getElementsByClassName("menu");
+var d3=document.getElementById("threed");
+
+
+
 
 
 
@@ -35,6 +39,7 @@ function story(){
     time_line.style.display="none";
     story_mode.style.display="block";
     about.style.display="none";
+    d3.style.display="none";
     document.getElementById("audioofstory").play();
 
 }
@@ -45,6 +50,7 @@ function aboutus(){
     time_line.style.display="none";
     story_mode.style.display="none";
     about.style.display="block";
+    d3.style.display="none";
     document.getElementById("audioofstory").pause();
 
 }
@@ -54,6 +60,7 @@ function timelinego(){
     time_line.style.display="block";
     story_mode.style.display="none";
     about.style.display="none";
+    d3.style.display="none";
     document.getElementById("audioofstory").pause();
 
 }
@@ -64,9 +71,33 @@ function homePage(){
     time_line.style.display="none";
     story_mode.style.display="none";
     about.style.display="none";
-    document.getElementById("audioofstory").pause()();
+    d3.style.display="none";
+    document.getElementById("audioofstory").pause();
 
 }
+
+function threed() {
+    homepage.style.display="none";
+    time_line.style.display="none";
+    story_mode.style.display="none";
+    about.style.display="none";
+    d3.style.display="block";
+    document.getElementById("audioofstory").pause();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var details=document.querySelector("#solo");
 function kavi() {
     details.innerText="Kaviyarasu";
