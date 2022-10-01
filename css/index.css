@@ -170,8 +170,8 @@ body {
 .sp {
   padding: 15px;
   float: left;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
   cursor: pointer;
   transition: 1s;
@@ -211,6 +211,9 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+}
+#about{
+  display: none;
 }
 
          
@@ -255,7 +258,7 @@ h4{
 hr{
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(250, 244, 244, 0.39), rgb(5, 5, 5), rgba(250, 244, 244, 0.39));
+  background-image: linear-gradient(to right, rgba(82, 82, 82, 0.39), rgb(255, 255, 255),  rgba(82, 82, 82, 0.39));
 }
 #time-line{
   display: none;
@@ -573,3 +576,90 @@ blockquote {
 
 
 /*for time line up altername add the class to corresponding elements*/
+/*About us */
+.members{
+  width: 40%;
+  height: 400px;
+  border: 3px inset #00d4fa;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 13px #ccc;
+  margin-top: 20px;
+  width: 320px;
+
+}
+.team-mem{
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc;
+}
+.team-mem:hover{
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+}
+.team-team{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items:center;
+
+}
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.details{
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 0 0 20px #eee;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
+}
