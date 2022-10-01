@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Black+Ops+One");
+canvas {
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 0 10px grey;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  user-select: none;
+  -ms-user-select: none;
+  font-family: "Roboto", sans-serif;
+}
+.warn {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-backdrop-filter: blur(5px);
+}
+.warn.show {
+  visibility: visible;
+  opacity: 1;
+}
+.warn.show .box {
+  margin-top: 0;
+}
+.warn .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: whitesmoke;
+  padding: 15px;
+  border-radius: 5px;
+  height: 150px;
+  width: 300px;
+  font-family: Roboto;
+  font-size: 17px;
+  transform: translate(-50%, -50%);
+  margin-top: -100px;
+  transition: all 0.5s ease;
+}
+.warn .box h2 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  text-align: center;
+}
+.warn .box .notify {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0 0 0;
+}
+.warn .box .notify h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.warn .box .restart, .warn .box .resume {
+  padding: 5px 0;
+  display: inline-block;
+  border-radius: 3px;
+  color: white;
+  width: 125px;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  transition: all 0.15s ease;
+}
+.warn .box .restart:hover, .warn .box .resume:hover {
+  padding-bottom: 10px;
+  box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.6) inset, 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+.warn .box .restart.selected, .warn .box .resume.selected {
+  padding-bottom: 0px;
+  padding-top: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6) inset;
+}
+.warn .box .restart:active, .warn .box .resume:active {
+  padding-bottom: 0px;
+  padding-top: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6) inset;
+}
+.warn .box .resume {
+  background: green;
+  right: 15px;
+}
+.warn .box .restart {
+  background: crimson;
+  left: 15px;
+}
+
+.fullscreen {
+  background: rgba(100, 100, 100, 0.5);
+  position: fixed;
+  bottom: 67px;
+  color: white;
+  left: 50%;
+  width: 160px;
+  margin-left: -75px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  height: 37px;
+  transition: all 0.5s ease;
+  line-height: 37px;
+}
+.fullscreen:hover {
+  transition: all 0.25s ease;
+  background: #5a5a5a;
+  transform: scale(1.1);
+  z-index: 11;
+}
+.fullscreen:active {
+  transform: scale(0.95);
+  transition: all 0s ease;
+}
+.fullscreen.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+.fullscreen .material-icons {
+  display: inline-block;
+  font-size: 24px;
+  transition: all 0.5s ease;
+  line-height: 37px;
+  vertical-align: middle;
+}
+.fullscreen .txt {
+  display: inline-block;
+  padding-left: 5px;
+  line-height: 37px;
+  vertical-align: middle;
+}
+
+.options {
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -75px;
+  width: 160px;
+  height: 37px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 37px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  z-index: 10;
+  overflow: hidden;
+}
+.options .close {
+  background: rgba(255, 100, 100, 0.8);
+  display: block;
+  height: 37px;
+  margin-top: -37px;
+  overflow: hidden;
+  line-height: 37px;
+  transition: all 0.5s ease;
+}
+.options .close .material-icons {
+  font-weight: bold;
+}
+.options .close.show {
+  height: 37px;
+  margin-top: 0;
+}
+.options:hover {
+  transition: all 0.25s ease;
+  transform: scale(1.1);
+}
+.options:active {
+  transform: scale(0.95);
+  transition: all 0s ease;
+  background: white;
+}
+.options .material-icons {
+  display: inline-block;
+  font-size: 24px;
+  transition: all 0.5s ease;
+  line-height: 37px;
+  vertical-align: middle;
+}
+.options .txt {
+  display: inline-block;
+  padding-left: 5px;
+  line-height: 37px;
+  vertical-align: middle;
+}
+.options.hide {
+  visibility: hidden;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 6;
+  -webkit-backdrop-filter: blur(5px);
+}
+.menu.show {
+  visibility: visible;
+  opacity: 1;
+}
+.menu.show .box {
+  margin-top: 0;
+}
+.menu .box {
+  position: absolute;
+  max-width: 1000px;
+  min-height: 200px;
+  width: 400px;
+  background: whitesmoke;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: -100px;
+  transition: inherit;
+  overflow-y: hidden;
+}
+.menu .box h2 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+  text-align: center;
+}
+.menu .box > div {
+  display: block;
+  padding: 0 0 10px 0;
+}
+.menu .box > div i.material-icons {
+  vertical-align: middle;
+  width: 35px;
+  text-align: right;
+  z-index: -1;
+  transition: all 0.25s ease;
+  line-height: 25px;
+  display: inline-block;
+  margin-left: 0;
+  overflow: hidden;
+  color: black;
+}
+.menu .box > div i.material-icons::before {
+  display: inline-block;
+  width: 35px;
+  color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  transition: inherit;
+  float: left;
+}
+.menu .box > div:hover span:after {
+  opacity: 1;
+}
+.menu .box > div:hover span:active::after {
+  opacity: 0;
+}
+.menu .box > div div {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
+  text-align: right;
+  width: 250px;
+  padding-right: 10px;
+}
+.menu .box span {
+  display: inline-block;
+  background: crimson;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  transition: all 0.25s ease;
+  vertical-align: middle;
+  z-index: 5;
+  position: relative;
+}
+.menu .box span.mouse + i.material-icons::before {
+  content: "mouse";
+}
+.menu .box span.resize + i.material-icons::before {
+  content: "notification_important";
+}
+.menu .box span.skip + i.material-icons::before {
+  content: "skip_next";
+}
+.menu .box span.widescreen + i.material-icons::before {
+  content: "fullscreen_exit";
+}
+.menu .box span::before {
+  content: "";
+  display: block;
+  height: 21px;
+  width: 21px;
+  margin: 2px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  transition: inherit;
+  position: relative;
+  z-index: 2;
+}
+.menu .box span:active::before {
+  width: 30px;
+  transition: all 0.1s ease;
+}
+.menu .box span::after {
+  content: "OFF";
+  display: inline-block;
+  position: relative;
+  top: -25px;
+  left: 24px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+.menu .box span.on {
+  background: limegreen;
+}
+.menu .box span.on::before {
+  margin-left: 27px;
+  background: white;
+}
+.menu .box span.on::after {
+  content: "ON";
+  left: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.menu .box span.on:active::before {
+  margin-left: 18px;
+}
+.menu .box span.on + i.material-icons {
+  color: rgba(0, 0, 0, 0);
+  margin-left: 0;
+}
+.menu .box span.on + i.material-icons::before {
+  color: black;
+}
