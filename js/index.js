@@ -20,4 +20,13 @@ function story(){
 
 }
 
+
+function aboutus(){
+    homepage.style.display="none";
+    time_line.style.display="none";
+    story_mode.style.display="none";
+    about.style.display="block";
+
+}
+
         
