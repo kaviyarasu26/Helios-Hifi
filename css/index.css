@@ -106,7 +106,7 @@ body {
 }
 
 #home-icon{
-  color:white !important;
+  color:white ;
 }
 .main {
   width: 100%;
@@ -346,8 +346,8 @@ header p {
   padding: 10px 30px;
   border-radius: 15px;
 }
-.timeline-item:not(:first-child) .timeline-content{
-  box-shadow: 0 0 5px #ccc;
+.timeline-item:not(:first-child) .timeline-content,.card-content{
+  box-shadow: 0 0 5px #ccc !important ;
 }
 .timeline-content::after {
   content: "";
