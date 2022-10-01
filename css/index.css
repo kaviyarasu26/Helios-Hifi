@@ -565,7 +565,10 @@ blockquote {
   margin-left: 20px;
 }
 
-
+.box{
+  width: 100%;
+  height: 100px;
+}
 
 
 /*for time line up altername add the class to corresponding elements*/
