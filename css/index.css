@@ -549,9 +549,9 @@ blockquote {
   .menu{
     display: block;
   }
-  .cn{
-    width:170px;
-    height:170px;
+  .sp{
+    width:200px;
+    height:200px;
   }
 }
 
