@@ -9,5 +9,13 @@ var kavi = document.getElementById("aside");
 
         }
 
+//start
+//story
+var home= document.getElementById("home");
+var time_line= document.getElementById("time-line");
+var story= document.getElementById("");
 
+
+
+function
         
