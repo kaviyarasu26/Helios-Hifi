@@ -20,14 +20,15 @@
     <div class="root ">
         <div class="navbar ">
             <div class="nav-left">
-                <h1 class="cname">Helios-Hif!</h1>
+                <h1 class="cname">Helios-Hif!<iconify-icon onclick="summada()" icon="gg:menu-right" style="color: #d400ff" width="30" height="30" class="menu"></iconify-icon>
+                </h1>
             </div>
             <div class="nav-right">
                 <button class="btn-grad" onclick="story()">Parker Story</button>
             </div>
         </div>
         <div class="main ">
-            <div class="aside">
+            <div class="aside" id="aside">
                 <iconify-icon class="icon" id="home-icon" icon="ant-design:home-filled" style="color: #d400ff;"
                     width="25" height="25">
                 </iconify-icon>
@@ -35,10 +36,14 @@
                 <iconify-icon class="icon" icon="teenyicons:vr-headset-outline" style="color: #d400ff;" width="25"
                     height="25"></iconify-icon>
                 <br />
-                <a href="game.html"><iconify-icon class="icon" icon="carbon:game-wireless" style="color: #d400ff;" width="25" height="25">
-                </iconify-icon></a>
+                <a href="game.html">
+                    <iconify-icon class="icon" icon="carbon:game-wireless" style="color: #d400ff;" width="25"
+                        height="25">
+                    </iconify-icon>
+                </a>
                 <br />
-                <iconify-icon class="icon" icon="bxs:doughnut-chart" style="color:#d400ff;" width="25" height="25">
+                <iconify-icon class="icon" onclick="timelinego()" icon="bxs:doughnut-chart" style="color:#d400ff;"
+                    width="25" height="25">
                 </iconify-icon>
                 <br />
                 <iconify-icon class="icon" icon="mdi:feature-search-outline" style="color: #d400ff;" width="25"
@@ -144,10 +149,196 @@
 
                 </div>
                 <div id="time-line">
-                    <!--type here sara-->
+
+                    <header>
+                        <div class="container text-center">
+                            <h1>PARKER SOLAR PROBE</h1>
+                            <p>Timeline</p>
+                        </div>
+                    </header>
+                    <section class="timeline">
+                        <div class="container">
+                            <div class="timeline-item">
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+
+                                    <div class="glass-card">
+                                        <div class="card-content">
+                                            <div class="blurred"></div>
+
+                                            <div class="date">2015</div>
+                                            <blockquote>March: Critical Design Review (CDR)</blockquote>
+                                            <a class="miss">Mission completed
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+
+
+
+
+                                    <div class="timeline-img-header">
+                                    </div>
+                                    <div class="date">2016</div>
+                                    <blockquote>May: System Integration Review</blockquote>
+                                    <blockquote>July: KDP-D</blockquote>
+                                    <blockquote>July: Start of Integration and Testing</blockquote>
+                                    <a class="miss">Mission completed
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">2017</div>
+                                    <blockquote>March 2017: Instrument Deliveries
+                                        Begin</blockquote>
+                                    <blockquote>August 2017: Observatory System Testing</blockquote>
+                                    <blockquote>Fall 2017: Shipment of Observatory to GSFC</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInRight">
+                                    <div class="date">2018</div>
+                                    <blockquote>Spring 2018: Shipment of Observatory to Cape Canaveral</blockquote>
+
+                                    <blockquote>August 12, 2018: Launch - 3:31 a.m. EDT (7:31 UTC)</blockquote>
+
+                                    <blockquote>October 3, 2018: Venus Flyby #1 - 4:44 a.m. EDT (8:44 UTC)</blockquote>
+                                    <blockquote>November 5, 2018: Perihelion #1 - 10:27 p.m. EST (Nov. 6, 2018 at 03:27
+                                        UTC)</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInLeft">
+                                    <div class="timeline-img-header">
+                                    </div>
+                                    <div class="date">2019</div>
+                                    <blockquote>January 19, 2019: Aphelion #1</blockquote>
+                                    <blockquote>January 20, 2019: Second Orbit Begins</blockquote>
+                                    <blockquote>April 4, 2019: Perihelion #2</blockquote>
+                                    <blockquote>September 1, 2019: Perihelion #3</blockquote>
+                                    <blockquote>December 26, 2019: Venus Flyby #2</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                    </div>
+                                    <div class="date">2020</div>
+                                    <blockquote>January 29, 2020: Perihelion #4</blockquote>
+                                    <blockquote>June 7, 2020: Perihelion #5</blockquote>
+                                    <blockquote>July 11, 2020: Venus Flyby #3</blockquote>
+                                    <blockquote>September 27, 2020: Perihelion #6</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">2021</div>
+                                    <blockquote>January 17, 2021: Perihelion #7</blockquote>
+                                    <blockquote>February 20, 2021: Venus Flyby #4</blockquote>
+                                    <blockquote>April 29, 2021: Perihelion #8</blockquote>
+                                    <blockquote>August 9, 2021: Perihelion #9</blockquote>
+                                    <blockquote>October 16, 2021: Venus Flyby #5</blockquote>
+                                    <blockquote>November 21, 2021: Perihelion #10</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                        <h2>Card Title</h2>
+                                    </div>
+                                    <div class="date">2022</div>
+                                    <blockquote>February 25, 2022: Perihelion #11</blockquote>
+                                    <blockquote>June 1, 2022: Perihelion #12</blockquote>
+                                    <blockquote>September 6, 2022: Perihelion #13</blockquote>
+                                    <blockquote>December 11, 2022: Perihelion #14</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="date">2023</div>
+                                    <blockquote>March 17, 2023: Perihelion #15</blockquote>
+                                    <blockquote>June 22, 2023: Perihelion #16</blockquote>
+                                    <blockquote>August 21, 2023: Venus Flyby #6</blockquote>
+                                    <blockquote>September 27, 2023: Perihelion #17</blockquote>
+                                    <blockquote>December 29, 2023: Perihelion #18</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">2024</div>
+                                    <blockquote>March 30, 2024: Perihelion #19</blockquote>
+                                    <blockquote>June 30, 2024: Perihelion #20</blockquote>
+                                    <blockquote>September 30, 2024: Perihelion #21</blockquote>
+                                    <blockquote>November 6, 2024: Venus Flyby #7 Final Venus Flyby</blockquote>
+                                    <blockquote>December 24, 2024: Perihelion #22 First Close Approach</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+
+                                <div class="timeline-img"></div>
+
+                                <div class="timeline-content js--fadeInLeft">
+                                    <div class="date">2025</div>
+                                    <blockquote>March 22, 2025: Perihelion #23</blockquote>
+                                    <blockquote>June 19, 2025: Perihelion #24</blockquote>
+                                    <button class="miss"> Mission Complete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div id="about">
-                    kavi
+
                     <!--Exo do about us here-->
                 </div>
                 <div id="story-mode">
@@ -203,9 +394,9 @@
 
 
 
+                </div>
             </div>
         </div>
-    </div>
 
     </div>
 
