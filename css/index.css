@@ -104,13 +104,7 @@ body {
 .nav-right {
   display: flex;
 }
-.cname {
-  margin-top: 20px;
-  margin-bottom: none;
-  color: white;
-  cursor: pointer;
-  font-family: Orbitron;
-}
+
 #home-icon{
   color:white !important;
 }
@@ -560,7 +554,16 @@ blockquote {
   }
 }
 
-
+#cname {
+  margin-top: 20px !important;
+  margin-bottom: none !important;
+  color: white;
+  cursor: pointer ;
+  font-family: "Roboto";
+  font-size: 200%;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
 
 
 
