@@ -8,9 +8,40 @@ var story_mode=document.getElementById("story-mode");
 var about=document.getElementById("about");
 var menu=document.getElementsByClassName("menu");
 var d3=document.getElementById("threed");
+var pop=document.getElementById("popup");
+
+var utc=document.getElementById("utc");
+var utc1=document.getElementById("utc1");
+var utc2=document.getElementById("utc2");
+
+function boom(){
+    pop.style.display="none";
+}
 
 
 
+function boomopposite(){
+    utc1.style.display="inline";
+    utc1.style.display="none";
+    utc2.style.display="none";
+    pop.style.display="flex";
+}
+
+function Goingon() {
+    utc1.style.display="none";
+    utc1.style.display="inline";
+    utc2.style.display="none";
+    pop.style.display="flex";
+    
+}
+
+function  planed(){
+    utc1.style.display="none";
+    utc1.style.display="none";
+    utc2.style.display="inline";
+    pop.style.display="flex";
+    
+}
 
 
 

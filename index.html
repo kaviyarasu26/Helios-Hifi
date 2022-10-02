@@ -14,6 +14,13 @@
     <div id="preloader" class="loader">
         <img src="https://flevix.com/wp-content/uploads/2020/01/Bounce-Bar-Preloader-1.gif" alt="">
     </div>
+    <div id="popup">
+        
+        <div id="complete">
+            <iconify-icon class="cross" onclick="boom()"  icon="fluent-emoji-high-contrast:cross-mark-button" width="35" height="35"></iconify-icon>
+             <p class="p" >Mession <span id="utc2" style="display: none;">planning</span> <span id="tuc" >completed Succesfully!!</span> <span id="utc1" style="display: none;">and  Going on </span>  </p>
+        </div>
+    </div>
     <video class="bg-video" src="./Source/pexels-robert-daniel-9440173.mp4" autoplay loop muted>
         Your Bowser not Support the Video
     </video>
@@ -166,7 +173,7 @@
                                     style="box-shadow: 0 0 5px #ccc; padding:20px !important;">
                                     <div class="date">2015</div>
                                     <blockquote>March: Critical Design Review (CDR)</blockquote>
-                                    <center><button class="miss"> Mission Complete</button></center>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss"> Mission Complete</button></center>
                                 </div>
                             </div>
 
@@ -185,8 +192,8 @@
                                     <blockquote>May: System Integration Review</blockquote>
                                     <blockquote>July: KDP-D</blockquote>
                                     <blockquote>July: Start of Integration and Testing</blockquote>
-                                    <button class="miss">Mission completed
-                                    </button>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss">Mission completed
+                                    </button></center>
                                 </div>
 
                             </div>
@@ -201,7 +208,7 @@
                                         Begin</blockquote>
                                     <blockquote>August 2017: Observatory System Testing</blockquote>
                                     <blockquote>Fall 2017: Shipment of Observatory to GSFC</blockquote>
-                                    <center><button class="miss"> Mission Complete</button></center>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss"> Mission Complete</button></center>
                                 </div>
                             </div>
 
@@ -218,7 +225,7 @@
                                     <blockquote>October 3, 2018: Venus Flyby #1 - 4:44 a.m. EDT (8:44 UTC)</blockquote>
                                     <blockquote>November 5, 2018: Perihelion #1 - 10:27 p.m. EST (Nov. 6, 2018 at 03:27
                                         UTC)</blockquote>
-                                    <center><button class="miss"> Mission Complete</button></center>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss"> Mission Complete</button></center>
                                 </div>
                             </div>
 
@@ -235,7 +242,7 @@
                                     <blockquote>April 4, 2019: Perihelion #2</blockquote>
                                     <blockquote>September 1, 2019: Perihelion #3</blockquote>
                                     <blockquote>December 26, 2019: Venus Flyby #2</blockquote>
-                                    <center><button class="miss"> Mission Complete</button></center>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss"> Mission Complete</button></center>
                                 </div>
                             </div>
 
@@ -251,7 +258,7 @@
                                     <blockquote>June 7, 2020: Perihelion #5</blockquote>
                                     <blockquote>July 11, 2020: Venus Flyby #3</blockquote>
                                     <blockquote>September 27, 2020: Perihelion #6</blockquote>
-                                    <center><button class="miss"> Mission Complete</button></center>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss"> Mission Complete</button></center>
                                 </div>
                             </div>
 
@@ -267,7 +274,7 @@
                                     <blockquote>August 9, 2021: Perihelion #9</blockquote>
                                     <blockquote>October 16, 2021: Venus Flyby #5</blockquote>
                                     <blockquote>November 21, 2021: Perihelion #10</blockquote>
-                                    <center><button class="miss"> Mission Complete</button></center>
+                                    <center><button class="btn-grad" onclick="boomopposite()" class="miss"> Mission Complete</button></center>
                                 </div>
                             </div>
 
@@ -284,7 +291,7 @@
                                     <blockquote>June 1, 2022: Perihelion #12</blockquote>
                                     <blockquote>September 6, 2022: Perihelion #13</blockquote>
                                     <blockquote>December 11, 2022: Perihelion #14</blockquote>
-                                    <center><button class="miss">Going on</button></center>
+                                    <center><button class="btn-grad"  onclick="Goingon()" class="miss">Going on</button></center>
                                 </div>
                             </div>
 
@@ -299,7 +306,7 @@
                                     <blockquote>August 21, 2023: Venus Flyby #6</blockquote>
                                     <blockquote>September 27, 2023: Perihelion #17</blockquote>
                                     <blockquote>December 29, 2023: Perihelion #18</blockquote>
-                                    <center><button class="miss"> Future Plan</button></center>
+                                    <center><button class="btn-grad" onclick="planed()" class="miss"> Future Plan</button></center>
                                 </div>
                             </div>
 
@@ -314,7 +321,7 @@
                                     <blockquote>September 30, 2024: Perihelion #21</blockquote>
                                     <blockquote>November 6, 2024: Venus Flyby #7 Final Venus Flyby</blockquote>
                                     <blockquote>December 24, 2024: Perihelion #22 First Close Approach</blockquote>
-                                    <center>   <button class="miss"> Future plan</button></center>
+                                    <center>   <button class="btn-grad" onclick="planed()" class="miss"> Future plan</button></center>
                                 </div>
                             </div>
                             <div class="timeline-item">
@@ -325,7 +332,7 @@
                                     <div class="date">2025</div>
                                     <blockquote>March 22, 2025: Perihelion #23</blockquote>
                                     <blockquote>June 19, 2025: Perihelion #24</blockquote>
-                                    <center><button class="miss"> Future Plan</button></center>
+                                    <center><button class="btn-grad" onclick="planed()" class="miss"> Future Plan</button></center>
                                 </div>
                             </div>
                             <br>
