@@ -536,7 +536,8 @@ blockquote {
     display: none;
   }
   .menu{
-    display: block;
+    display: inline-block;
+    margin-left: 3px;
   }
   .sp{
     width:200px;
