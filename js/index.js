@@ -72,6 +72,21 @@ function story(){
     about.style.display="none";
     d3.style.display="none";
     document.getElementById("audioofstory").play();
+    document.getElementById("helo").style.display="flex";
+    var timeleft = 3;
+    var downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("downtime").innerHTML = "Launch";
+      } else {
+        document.getElementById("downtime").innerHTML = timeleft ;
+      }
+      timeleft -= 1;
+    }, 1000);
+    setInterval(()=>{
+        document.getElementById("helo").style.display="none";
+
+    },5000);
 
 }
 
@@ -167,6 +182,6 @@ function selvi() {
         loop:true
     }) */
 
-
+   
 
     
