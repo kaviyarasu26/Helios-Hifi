@@ -137,10 +137,12 @@ body {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
+  color: #d400ff;
 }
 .icon :hover {
-  border: 1px solid blue;
+  border: 1px solid white;
 }
+
 #loginicon {
   margin: 11px !important;
   cursor: pointer !important;
@@ -388,7 +390,7 @@ header p {
 }
 
 .timeline-item .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../Source/img15.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -571,7 +573,7 @@ blockquote {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   padding: 10px;
-  box-shadow: 0 0 13px #ccc;
+  box-shadow: 0 0 7px #ccc;
   margin-top: 20px;
   width: 320px;
 
@@ -629,7 +631,19 @@ blockquote {
   border-radius: 10px;
   display: block;
 }
+.story{
+  width: 80%;
+  min-width: 30px;
+  background-color: black;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
 
+
+}
 .btn-grad:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
