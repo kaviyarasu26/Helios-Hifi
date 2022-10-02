@@ -139,7 +139,7 @@ body {
   -o-border-radius: 3px;
   color: #d400ff;
 }
-.icon :hover {
+.icon:hover {
   border: 1px solid white;
 }
 
@@ -228,11 +228,6 @@ body {
   display: none;
 }
 
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
 h4{
   margin: 0 !important;
   color: #00d4fa; 
@@ -542,6 +537,10 @@ blockquote {
   .sp{
     width:200px;
     height:200px;
+  }
+  #orbit{
+    width: 70%;
+    height: 70%;
   }
 }
 
