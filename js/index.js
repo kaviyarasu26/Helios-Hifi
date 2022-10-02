@@ -40,7 +40,7 @@ function story(){
     story_mode.style.display="block";
     about.style.display="none";
     d3.style.display="none";
-    document.getElementById("audioofstory").pause();
+    document.getElementById("audioofstory").play();
 
 }
 
