@@ -13,7 +13,6 @@ var pop=document.getElementById("popup");
 var utc=document.getElementById("utc");
 var utc1=document.getElementById("utc1");
 var utc2=document.getElementById("utc2");
-var last=document.getElementById("threetiksound");
 
 function boom(){
     pop.style.display="none";
@@ -73,7 +72,6 @@ function story(){
     about.style.display="none";
     d3.style.display="none";
     document.getElementById("audioofstory").play();
-    last.play();
     document.getElementById("helo").style.display="flex";
     var timeleft = 3;
     var downloadTimer = setInterval(function(){
@@ -100,7 +98,6 @@ function aboutus(){
     about.style.display="block";
     d3.style.display="none";
     document.getElementById("audioofstory").pause();
-    last.pause();
 
 }
 
@@ -111,7 +108,6 @@ function timelinego(){
     about.style.display="none";
     d3.style.display="none";
     document.getElementById("audioofstory").pause();
-    last.pause();
 
 }
         
@@ -123,7 +119,6 @@ function homePage(){
     about.style.display="none";
     d3.style.display="none";
     document.getElementById("audioofstory").pause();
-    last.pause();
 
 }
 
@@ -134,7 +129,6 @@ function threed() {
     about.style.display="none";
     d3.style.display="block";
     document.getElementById("audioofstory").pause();
-    last.pause();
 }
 
 
